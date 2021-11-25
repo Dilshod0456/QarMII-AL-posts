@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="carousel.css" rel="stylesheet">
+
+
+<main>
+<h1 style=" margin: 30px auto; width: 100%; height: 150px;  text-align: center; font-family: Algerian; font-size: 150px; text-align: center;">QarMII AL</h1>
+ 
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <figure><img class="bd-placeholder-img rounded-circle" src="http://litsey-qmii.uz/wp-content/uploads/2019/05/Direktor-226x300.jpg" alt="" width="200" height="226" srcset="http://litsey-qmii.uz/wp-content/uploads/2019/05/Direktor-226x300.jpg 226w, http://litsey-qmii.uz/wp-content/uploads/2019/05/Direktor.jpg 261w" sizes="(max-width: 226px) 100vw, 226px"  ></figure>
+
+        <h2>Direktor</h2>
+        <p>Litsey direktori Qudratov Akmaljon Ibodillayevich haqida</p>
+        <p><a class="btn btn-secondary" href="Direktor">Batafsil &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+      <figure><img class="bd-placeholder-img rounded-circle" src="https://litsey-qmii.uz/wp-content/uploads/2021/04/cropped-photo5449413308294737649-e1617518042936-2.jpg" alt="" width="200" height="226" srcset="https://litsey-qmii.uz/wp-content/uploads/2021/04/cropped-photo5449413308294737649-e1617518042936-2.jpg" sizes="(max-width: 226px) 100vw, 226px"  ></figure>
+
+      <h2>Litsey Raxbariyati</h2>
+        <p>Litsey Raxbariyati tarkibi haqida batafsil ma'lumotlar</p>
+        <p><a class="btn btn-secondary" href="Rahbariyat">Batafsil &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+       <figure><img class="bd-placeholder-img rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT316g0I3e5GBeqW0OSsnuVYJZg__RewmenqnrHaxoW7AMaHDI1iwCYHN18g5HaQI0MNTk&usqp=CAU" alt="" width="200" height="226" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT316g0I3e5GBeqW0OSsnuVYJZg__RewmenqnrHaxoW7AMaHDI1iwCYHN18g5HaQI0MNTk&usqp=CAU" sizes="(max-width: 226px) 100vw, 226px"  ></figure>
+
+        <h2>IT fan o'qituvchisi</h2>
+        <p>Litsey Informatika va Axborot texnologiyalari fani o'qituvchisi haqida.</p>
+        <p><a class="btn btn-secondary" href="IT_ticher">Batafsil &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+
+
+{% for post in posts %}
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">{{ post.title }} <span class="text-muted">QarMIIAL_news</span></h2>
+        <p class="lead">{{ post.discription }}</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{{post.image.url}}" alt='' width="450" height="450">
+        <hr class="container marketing">
+        <a href="{{post.get_absolute_url}}" role="button" class="btn btn-sm btn-outline-secondary">Batafsil...</a>
+      </div>
+    
+    </div>
+ {%endfor%}
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+</main>
+  <!-- FOOTER -->
+ 
+{% endblock content %}

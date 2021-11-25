@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>QarMII news</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body{
+    background-color: #111111;
+    margin: 0;
+    }
+
+    .img-liquid {
+        margin: 120px auto;
+        width: 300px;
+        height: 300px;
+        background-image: url('nuruston.jpg');
+        background-position: center;
+        background-size: cover;
+        /*Endi liquid efektini beramiz*/
+        border-radius: 63% 20% 30% 10% / 40% 33% 50% 50%;
+        border: 8px solid rgb(65, 63, 63);
+        transition: all 10s;
+        animation: anim 10s infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes anim{
+        0% {
+            border-radius: 63% 20% 30% 10% / 40% 33% 50% 50%;
+        }
+        50% {
+            border-radius: 13% 60% 80% 30% / 20% 36% 10% 30%;
+        }
+    }
+    p {
+      color: rgb(90, 80, 250);
+    }
+    h1 {
+      color: rgb(55, 123, 250);
+    }
+    h2 {
+      color: rgb(55, 123, 200);
+    }
+    
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <!--Yuqoridagi tugmachalari-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home/">QarMII AL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home/">Asosiy sahifa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://t.me/Dilshod_Narzullayev_Almurod_ogli">Yaratuvchi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled", href= 'https://t.me/susys_wdg' >by SUSYS</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<li>
+<li>
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+
+ <footer class="container">
+    <p class="float-end"><a href="/about/">Haqida🔗 </a></p>
+    <p>&copy; Rasmiy sahifalar: &middot; <a href="https://t.me/pmii_academ_letsiy">T.me</a> &middot; <a href="https://www.facebook.com/2000qarmiial">Facebook</a></p>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+      
+  </body>
+</html>

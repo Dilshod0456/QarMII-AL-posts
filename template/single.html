@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<li>
+<ol>
+<p>{{post.title}}</p>
+<p>{{post.discription}}</p>
+<p><img src="{{post.image.url}}" alt='' width="600" height="500"></p>
+{% endblock content %}
